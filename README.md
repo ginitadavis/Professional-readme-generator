@@ -1,9 +1,9 @@
 
-# Professional Readme
+# sdf
 
 ## Description
 
-This application was built to design a Readme file. I wanted to apply my new knowlegde of node.js to create a server application using the ES6 syntax in javascript and the terminal.
+sdf
 
 ## Table of Contents
 
@@ -14,24 +14,24 @@ This application was built to design a Readme file. I wanted to apply my new kno
 - [License](#license)
 
 ## Installation
-After this project I feel more confident using node.jsTo start running this project in a computer, the user needs to install node.js in their computer. In the browser search for a node version no lower than 16.19.1 and download it to the computer.
+sdf
 
 ## Usage
 
-Check if node.js was installed going to gitbash and typing "node", the terminal will show the version of node installed.The video shows an user going to the terminal and typing node.js and then a series of questions pop up. When the user answers the questions, a readme file is generated and those responses are added to the file.
+sf
 
 ![alt text](assets/images/inquirer-screenshot.png)
 
 ## Contributing
-- [@ginitadavis](ginitadavis)
+- [@ginitadavis](https://github.com/sdf/)
 
 ## Tests
-This is the first test of my application
+sdf
 
 ## Questions
-Link to my github profile ginitadavis
+Link to my github profile [@ginitadavis](https://github.com/sdf/)
 
 ## License
-Apache License v2.0,GNU General Public License v3.0,MIT License
+[![Apache License v2.0](https://img.shields.io/badge/-Apache%20License%20v2.0-orange)](http://www.apache.org/licenses/LICENSE-2.0)[![GNU General Public License v3.0](https://img.shields.io/badge/-GNU%20General%20Public%20License%20v3.0-blue)](https://www.gnu.org/licenses/)[![MIT License](https://img.shields.io/badge/-MIT%20License-brightgreen)](https://www.mit.edu/~amini/LICENSE.md)
 
     

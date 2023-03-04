@@ -4,28 +4,11 @@ const inquirer = require('inquirer')
 const questions = ['What is the title of your project','Provide a description of your project', 'Provide a detailed installation process', 'Explain the usage of the application',
 'What is your github username?', 'Test instructions'];
 const license = ['Apache License v2.0','GNU General Public License v3.0','MIT License'];
-// const apache = `Copyright [yyyy] [name of copyright owner]
 
-// Licensed under the Apache License, Version 2.0 (the "License");
-// you may not use this file except in compliance with the License.
-// You may obtain a copy of the License at
+const apache = `[![Apache License v2.0](https://img.shields.io/badge/-Apache%20License%20v2.0-orange)](http://www.apache.org/licenses/LICENSE-2.0)`
+const GNU = `[![GNU General Public License v3.0](https://img.shields.io/badge/-GNU%20General%20Public%20License%20v3.0-blue)](https://www.gnu.org/licenses/)`
+const MIT = `[![MIT License](https://img.shields.io/badge/-MIT%20License-brightgreen)](https://www.mit.edu/~amini/LICENSE.md)`
 
-//     http://www.apache.org/licenses/LICENSE-2.0
-
-// Unless required by applicable law or agreed to in writing, software
-// distributed under the License is distributed on an "AS IS" BASIS,
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// See the License for the specific language governing permissions and
-// limitations under the License.`
-
-// const GNU = `GNU General Public License v3.0
-// This program is free software: you can redistribute it and/or modify
-// it under the terms of the GNU General Public License as published by
-// the Free Software Foundation, either version 3 of the License, or
-// (at your option) any later version.
-// See <https://www.gnu.org/licenses/>.`
-
-// const MIT = `[MIT](https://choosealicense.com/licenses/mit/)`
 const fs = require('fs');
 let response = [];
 
@@ -33,6 +16,23 @@ let response = [];
 function writeToFile(fileName, data) {
     // use the fs write file function 
     // pass the filename and the data to the function
+
+    let selectedLicense = '';
+    for (let i = 0; i < data.license.length; i++){
+        
+        let firstWord;
+        firstWord = data.license[i].split(' ')[0];
+
+        if (firstWord === 'Apache'){
+            selectedLicense = selectedLicense + apache;    
+        }
+        if (firstWord === 'MIT'){
+            selectedLicense = selectedLicense + MIT;
+        }
+        if (firstWord === 'GNU'){
+            selectedLicense = selectedLicense + GNU;
+        }
+    }
 
     const completedReadme = `
 # ${data.proTitle}
@@ -59,18 +59,22 @@ ${data.proUsage}
 ![alt text](assets/images/inquirer-screenshot.png)
 
 ## Contributing
-- [@ginitadavis](${data.github})
+- [![Node.js](https://img.shields.io/badge/-node.js-blueviolet)](https://img.shields.io/badge/-node.js-blueviolet)
+- [![Node.js](https://img.shields.io/badge/-node.js-blueviolet)](https://img.shields.io/badge/-node.js-blueviolet)
+
 
 ## Tests
 ${data.testInstructions}
 
 ## Questions
-Link to my github profile ${data.github}
+Link to my github profile [@ginitadavis](https://github.com/${data.github}/)
 
 ## License
-${data.license}
+${selectedLicense}
 
     `
+    
+    
     fs.writeFile(fileName, completedReadme, function(){
         console.log('README successfully created!');
     })
@@ -111,7 +115,7 @@ function init() {
             name: 'testInstructions'
         },
         {
-            type: 'checkbox',
+            type: 'checkbox',//process.argv[7]
             message: 'Please select a license',
             name: 'license',
             choices: license,
