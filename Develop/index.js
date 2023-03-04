@@ -68,6 +68,7 @@ ${selectedLicense}
 ${data.proDescription}
 
 
+
 # Table of Contents
 
 - [Installation](#installation)
@@ -78,8 +79,11 @@ ${data.proDescription}
 - [Questions](#questions)
 - [License](#license)
 
+
+
 # Installation
 ${data.proInstallation}
+
 
 
 # Usage
@@ -90,18 +94,23 @@ ${data.proUsage}
 
 ![alt text](assets/images/terminal-readme.png)
 
+Link to the walkthrough video that demonstrates the functionality of the README generator [Click here to watch the video](https://drive.google.com/file/d/10pUUMKkmxv350_lpwStzswC7ctnFyqh2/view)
+
 
 # Credits
 - [![Node.js](https://img.shields.io/badge/-node.js-blueviolet)](https://nodejs.org/en/)
 - [![inquirer](https://img.shields.io/badge/-inquirer-ff69b4)](https://www.npmjs.com/package/inquirer)
 
 
+
 # Contributing
 ${data.contributing}
 
 
+
 # Tests
 ${data.testInstructions}
+
 
 
 # Questions
@@ -109,8 +118,11 @@ Link to my github profile [Github](https://github.com/${data.github}/)
 If you have any questions, you can reach me via email at ${data.email}
 
 
+
 # License
 ${selectedNotice}
+
+
 
     `
     
