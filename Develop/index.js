@@ -2,7 +2,7 @@
 const inquirer = require('inquirer')
 // TODO: Create an array of questions for user input
 const questions = ['What is the title of your project','Provide a description of your project', 'Provide a detailed installation process', 'Explain the usage of the application',
-'What is your github username?', 'Test instructions'];
+'What is your github username?', 'What is your email address?','Please enter contributing guidelines', 'Test instructions'];
 const license = ['Apache License v2.0','GNU General Public License v3.0','MIT License'];
 
 const apache = `[![Apache License v2.0](https://img.shields.io/badge/-Apache%20License%20v2.0-orange)](http://www.apache.org/licenses/LICENSE-2.0)`
@@ -45,8 +45,10 @@ ${data.proDescription}
 
 - [Installation](#installation)
 - [Usage](#usage)
+- [Credits](#credits)
 - [Contributing](#contributing)
 - [Tests](#tests)
+- [Questions](#questions)
 - [License](#license)
 
 ## Installation
@@ -57,17 +59,22 @@ ${data.proInstallation}
 ${data.proUsage}
 
 ![alt text](assets/images/inquirer-screenshot.png)
+![alt text](assets/images/terminal-readme.png)
+
+## Credits
+- [![Node.js](https://img.shields.io/badge/-node.js-blueviolet)](https://nodejs.org/en/)
+- [![inquirer](https://img.shields.io/badge/-inquirer-ff69b4)](https://www.npmjs.com/package/inquirer)
+
 
 ## Contributing
-- [![Node.js](https://img.shields.io/badge/-node.js-blueviolet)](https://img.shields.io/badge/-node.js-blueviolet)
-- [![Node.js](https://img.shields.io/badge/-node.js-blueviolet)](https://img.shields.io/badge/-node.js-blueviolet)
-
+${data.contributing}
 
 ## Tests
 ${data.testInstructions}
 
 ## Questions
-Link to my github profile [@ginitadavis](https://github.com/${data.github}/)
+Link to my github profile [![GitHub](https://github.com/${data.github}/)](https://github.com/${data.github}/)
+If you have any questions, you can reach me via email at ${data.email}
 
 ## License
 ${selectedLicense}
@@ -112,6 +119,16 @@ function init() {
         {
             type: 'input',
             message: questions[5],
+            name: 'email'
+        },
+        {
+            type: 'input',
+            message: questions[6],
+            name: 'contributing'
+        },
+        {
+            type: 'input',
+            message: questions[7],
             name: 'testInstructions'
         },
         {

@@ -1,37 +1,47 @@
 
-# sdf
+# Test
 
 ## Description
 
-sdf
+Test
 
 ## Table of Contents
 
 - [Installation](#installation)
 - [Usage](#usage)
+- [Credits](#credits)
 - [Contributing](#contributing)
 - [Tests](#tests)
+- [Questions](#questions)
 - [License](#license)
 
 ## Installation
-sdf
+Test
 
 ## Usage
 
-sf
+Test
 
 ![alt text](assets/images/inquirer-screenshot.png)
 
+## Credits
+- [![Node.js](https://img.shields.io/badge/-node.js-blueviolet)](https://nodejs.org/en/)
+- [![inquirer](https://img.shields.io/badge/-inquirer-ff69b4)](https://www.npmjs.com/package/inquirer)
+
+
 ## Contributing
-- [@ginitadavis](https://github.com/sdf/)
+
+
+
 
 ## Tests
-sdf
+test instructions
 
 ## Questions
-Link to my github profile [@ginitadavis](https://github.com/sdf/)
+Link to my github profile [![GitHub](https://github.com/test/)](https://github.com/test/)
+If you have any questions, you can reach me via email at test@gmail.com
 
 ## License
-[![Apache License v2.0](https://img.shields.io/badge/-Apache%20License%20v2.0-orange)](http://www.apache.org/licenses/LICENSE-2.0)[![GNU General Public License v3.0](https://img.shields.io/badge/-GNU%20General%20Public%20License%20v3.0-blue)](https://www.gnu.org/licenses/)[![MIT License](https://img.shields.io/badge/-MIT%20License-brightgreen)](https://www.mit.edu/~amini/LICENSE.md)
+[![GNU General Public License v3.0](https://img.shields.io/badge/-GNU%20General%20Public%20License%20v3.0-blue)](https://www.gnu.org/licenses/)
 
     
