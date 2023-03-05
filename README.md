@@ -1,10 +1,10 @@
 
-# Professional Readme
+# Professional Readme Generator
 [![Apache License v2.0](https://img.shields.io/badge/-Apache%20License%20v2.0-orange)](http://www.apache.org/licenses/LICENSE-2.0)[![GNU General Public License v3.0](https://img.shields.io/badge/-GNU%20General%20Public%20License%20v3.0-blue)](https://www.gnu.org/licenses/)[![MIT License](https://img.shields.io/badge/-MIT%20License-brightgreen)](https://www.mit.edu/~amini/LICENSE.md)
 
 # Description
 
-This application was built to design a Readme file. I wanted to apply my new knowledge of node.js to create a server application using the ES6 syntax in javascript. After this project I feel a little more comfortable using node.js
+This application was built to design a Readme file. I wanted to apply my new knowlegde of node.js to create a server application using javascript and the terminal. After this project I feel more confident using node.js
 
 
 
@@ -21,17 +21,19 @@ This application was built to design a Readme file. I wanted to apply my new kno
 
 
 # Installation
-To start running this project in a computer, the user needs to install node.js in their computer. In the browser search for a node version no lower than 16.19.1 and download it. Check if node.js was installed going to gitbash and typing "node", the terminal will show the version of node installed. Now open Visual Studio and in the terminal type nmp inquirer@8.2.4 to install the inquirer package that assists with the prompt questions that designs the readme file.
+To start running this project in a computer, the user needs to install node.js in their computer. In the browser search for a node version no lower than 16.19 and download it to the computer. Check if node.js was installed going to gitbash and typing "node", the terminal will show the version of node installed.Now open Visual Studio Code and in the terminal type npm inquirer@8.2.4 to install the inquirer package that assists with the prompt questions that designs the readme file. Now the computer is ready to read the code.
+
+![alt text](assets/images/inquirer-screenshot.png)
 
 
 
 # Usage
 
-This video shows an user going to the terminal and typing node index.js and then a series of questions appear in the terminal. A readme file is generated with the answers.
-
-![alt text](assets/images/inquirer-screenshot.png)
+The video shows an user going to the terminal and typing node.js and then a series of questions pop up. When the user answers the questions, a readme file is generated and those responses are added to the file.
 
 ![alt text](assets/images/terminal-readme.png)
+
+Link to the walkthrough video that demonstrates the functionality of the README generator [Click here to watch the video](https://drive.google.com/file/d/1zGuKZzuoalbatS5zntjUP5z35saLKSWd/view)
 
 
 
@@ -42,12 +44,12 @@ This video shows an user going to the terminal and typing node index.js and then
 
 
 # Contributing
-Please send a pull request of your suggested fix/changes with descriptions, or please email me if you want to contribute to this project.
+Please send a pull request of your suggested fix/change with descriptions or please email me if you want to contribute to this project.
 
 
 
 # Tests
-After running node index.js, it is possible to use the console.log to test the readme generator, and check the type of data that is being entered.
+The console.log is very useful to see what type of variables are being printed in the terminal. I run the application and use the console.log to debug any problems I encounter.
 
 
 

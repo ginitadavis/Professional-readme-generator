@@ -84,17 +84,18 @@ ${data.proDescription}
 # Installation
 ${data.proInstallation}
 
+![alt text](assets/images/inquirer-screenshot.png)
+
 
 
 # Usage
 
 ${data.proUsage}
 
-![alt text](assets/images/inquirer-screenshot.png)
-
 ![alt text](assets/images/terminal-readme.png)
 
-Link to the walkthrough video that demonstrates the functionality of the README generator [Click here to watch the video](https://drive.google.com/file/d/10pUUMKkmxv350_lpwStzswC7ctnFyqh2/view)
+Link to the walkthrough video that demonstrates the functionality of the README generator [Click here to watch the video](https://drive.google.com/file/d/1zGuKZzuoalbatS5zntjUP5z35saLKSWd/view)
+
 
 
 # Credits
