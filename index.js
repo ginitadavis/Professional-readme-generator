@@ -185,7 +185,7 @@ function init() {
         }
     ])
     .then ((data) => {
-        const fileName = '../README.md';
+        const fileName = 'README.md';
         writeToFile(fileName, data);
     })
 }
